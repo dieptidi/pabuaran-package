@@ -10,8 +10,11 @@ class ButtonUngu extends StatelessWidget {
   Widget build(BuildContext context) {
     return RaisedButton(
       onPressed: this.onPressed,
-      child: Text(this.text),
-      color: Colors.purpleAccent,
+      child: Text(
+        this.text,
+        style: TextStyle(color: Colors.white),
+      ),
+      color: Colors.red,
     );
   }
 }
